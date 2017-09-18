@@ -1,0 +1,17 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <h2>Viewing Your Shibboleth Attributes</h2>
+        <p>
+            Click the @Html.ActionLink("My Shibboleth Attributes", "Attributes", "Shibboleth") link here or in the menu above to view your information returned from Shibboleth.
+            You must be logged in to view this information, and will be redirected to the login page of your IdP if not already authenticated.
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h2>How It Works</h2>
+        <p>
+            In summary, a <code>[ShibbolethAuthorize]</code> attribute exists which can ensure access to an ActionMethod, class, etc. is authenticated and authorized.
+            This filter attribute, which inherits from the base .NET AuthorizeAttribute, can be used in the same way the standard <code>[Authorize]</code> attribute works, e.g. to allow select users and roles access.
+            View the project's included README.md file for more information.
+        </p>
+    </div>
+</div>

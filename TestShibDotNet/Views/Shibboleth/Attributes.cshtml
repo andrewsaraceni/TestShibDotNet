@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "My Shibboleth Attributes";
+}
+
+<h2>My Shibboleth Attributes</h2>
+<h4>The following attributes have been returned by the Shibboleth IdP for your current session:</h4>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <tbody>
+            @foreach (KeyValuePair<string, string> attribute in ViewBag.ShibAttributes)
+            {
+                <tr>
+                    <th class="active">@attribute.Key</th>
+                    <td>@attribute.Value</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

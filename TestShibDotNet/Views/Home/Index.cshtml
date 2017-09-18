@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to TestShibDotNet!</h1>
+    <p class="lead">
+        TestShibDotNet demonstrates integrating Shibboleth authentication and authorization into a sample .NET application.
+        Login to test Shibboleth authentication and view your Shibboleth attributes.
+    </p>
+    <p>
+        @Html.ActionLink(
+            HttpUtility.HtmlDecode("Login &raquo;"),
+            "Login",
+            "Account",
+            new { returnUrl = "../Shibboleth/Index" },
+            new { @class = "btn btn-primary btn-lg" }
+        )
+    </p>
+</div>
+
+@Html.Partial("PreFooterPartial")
